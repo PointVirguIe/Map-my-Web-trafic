@@ -1,4 +1,4 @@
-import json, getopt, sys
+import getopt, sys
 from update_check import isUpToDate
 
 # Debug
@@ -10,24 +10,13 @@ if isUpToDate(__file__, "https://github.com/MajestionMC/Build-Minecraft-Server/m
    print(alert + "There is an newer version on Github. Please download the new version.")
 
 def main(argv):
-   try:
-      opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
-   except getopt.GetoptError:
-      print(err + "Please, try: main.py -h") 
-      sys.exit(2)
-   for opt, arg in opts:
-      if opt == '-h':
-         print("\nExample:\tmain.py  -a  spigot  1.16.2  \{ServerName}\n\
-             ")
-         sys.exit()
-      elif opt in ("-i", "--ifile"):
-         inputfile = arg
-      elif opt in ("-o", "--ofile"):
-         outputfile = arg
-
-try:
-    with open('bin/data.json') as fp:
-        data = json.load(fp)
-except:
-    with open('person.txt', 'w') as json_file:
-        json.dump(data_to_dump, json_file)
+    if sys.argv[1] == "-h":
+       pass
+    if sys.argv[1] == "-rm":
+       pass
+    if sys.argv[1] == "-a":
+       pass
+    if sys.argv[1] == "-ls":
+       pass
+    if sys.argv[1] == "-R":
+       pass
