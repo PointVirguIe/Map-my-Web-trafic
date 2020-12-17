@@ -1,6 +1,8 @@
 import getopt, sys
 from update_check import isUpToDate
 
+from lib import *
+
 # Debug
 err = "[  ERROR  ]  "
 alert = "[  ALERT  ]  "
