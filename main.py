@@ -8,7 +8,7 @@ err = "[  ERROR  ]  "
 alert = "[  ALERT  ]  "
 
 # Check update
-if isUpToDate(__file__, "https://github.com/MajestionMC/Build-Minecraft-Server/main.py") == False:
+if isUpToDate(__file__, "https://github.com/PointVirguIe/Map-my-Web-trafic/main.py") == False:
    print(alert + "There is an newer version on Github. Please download the new version.")
 
 def main(argv):
